@@ -21,14 +21,14 @@ export const ItemsList = () => {
 
   return (
     <div>
-      {lostItems.map((el) => (
-        <div key={el._id}>
-          {" "}
-          {/* add unique key */}
-          <div>{el.ItemName}</div>
-          <div>{el.description}</div>
-        </div>
-      ))}
+      <div className="flex justify-center items-center bg-gray-100 gap-4">
+        {lostItems.map((el) => (
+          <div key={el._id}>
+            <div>{el.ItemName}</div>
+            <div>{el.description}</div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
